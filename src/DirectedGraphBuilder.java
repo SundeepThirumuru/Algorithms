@@ -12,7 +12,7 @@ public class DirectedGraphBuilder
 	public Graph buildGraph()
 	{
 		Graph g = new Graph();
-		Map<String, Vertex> labelVsVertexMap = new HashMap<>();
+		Map<String, Vertex> labelVsVertexMap = new HashMap<String, Vertex>();
 		for(int i=1; i <=875714; i++)
 		{
 			Vertex v = new Vertex(Integer.toString(i));

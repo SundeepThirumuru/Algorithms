@@ -14,8 +14,8 @@ public class Vertex
 	public Vertex(String name)
 	{
 		this.name = name;
-		connectedEdges = new ArrayList<>();
-		keyValueMap = new HashMap<>();
+		connectedEdges = new ArrayList<Edge>();
+		keyValueMap = new HashMap<Object, Object>();
 	}
 	
 	public void addEdge(Edge edge)

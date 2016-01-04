@@ -89,7 +89,7 @@ public class InversionsAlgorithm
 	
 	public static ArrayList<Integer> readFile(String fileName)
 	{
-		ArrayList<Integer> integerList = new ArrayList<>();
+		ArrayList<Integer> integerList = new ArrayList<Integer>();
 		try 
 		{
 			BufferedReader fileReader = new BufferedReader(new FileReader(fileName));

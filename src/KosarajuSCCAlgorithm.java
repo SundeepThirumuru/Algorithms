@@ -7,9 +7,9 @@ import java.util.List;
 public class KosarajuSCCAlgorithm
 {
 
-	private List<Vertex> vertexList = new LinkedList<>();
+	private List<Vertex> vertexList = new LinkedList<Vertex>();
 	private int sccSize = 0;
-	private List<Integer> sccList = new ArrayList<>();
+	private List<Integer> sccList = new ArrayList<Integer>();
 	public static void main(String[] args)
 	{
 		List<Integer> sccList = new KosarajuSCCAlgorithm().findSCC(new DirectedGraphBuilder().buildGraph());
@@ -25,7 +25,7 @@ public class KosarajuSCCAlgorithm
 		sccList.clear();
 		sccSize = 0;
 		markGraphUnExplored(g);
-		DFS(new ArrayList<>(vertexList), false);
+		DFS(new ArrayList<Vertex>(vertexList), false);
 		return sccList;
 		
 	}

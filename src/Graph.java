@@ -11,8 +11,8 @@ public class Graph
 	
 	public Graph()
 	{
-		vertices = new ArrayList<>();
-		edges = new ArrayList<>();
+		vertices = new ArrayList<Vertex>();
+		edges = new ArrayList<Edge>();
 	}
 	
 	public void addVertex(Vertex vertex)
@@ -38,7 +38,7 @@ public class Graph
 	public Graph clone()
 	{
 		Graph clone = new Graph();
-		HashMap<Vertex, Vertex> cloneMap = new HashMap<>();
+		HashMap<Vertex, Vertex> cloneMap = new HashMap<Vertex, Vertex>();
 		for(Vertex v : vertices)
 		{
 			cloneMap.put(v, v.clone());

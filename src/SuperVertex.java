@@ -9,7 +9,7 @@ public class SuperVertex extends Vertex
 	public SuperVertex(String name)
 	{
 		super(name);
-		containedVertices = new ArrayList<>();
+		containedVertices = new ArrayList<Vertex>();
 	}
 	
 	public void addVertex(Vertex gobbledVertex)

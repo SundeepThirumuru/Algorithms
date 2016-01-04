@@ -86,7 +86,7 @@ public class QuickSort {
 		int startElement = a.get(startIndex);
 		int endElement = a.get(endIndex - 1);		
 		int middleElement = a.get(middleIndex);
-		ArrayList<Integer> tempList = new ArrayList<>();
+		ArrayList<Integer> tempList = new ArrayList<Integer>();
 		tempList.add(startElement);
 		tempList.add(endElement);
 		tempList.add(middleElement);
