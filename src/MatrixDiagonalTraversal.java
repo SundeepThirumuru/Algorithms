@@ -88,15 +88,7 @@ public class MatrixDiagonalTraversal {
     public static void main(String[] args) {
         //int[][] matrix = new int[][]{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
         int[][] matrix = new int[][]{{1, 2, 3, 4, 5}, {6, 7, 8, 9, 10}, {11, 12, 13, 14, 15}, {16, 17, 18, 19, 20}, {21, 22, 23, 24, 25}};
-        for(int[] row : matrix)
-        {
-            System.out.println();
-            for(int value : row)
-            {
-                System.out.print(value + " ");
-            }
-        }
-        System.out.println("");
+        printMatrix(matrix);
 
         System.out.println("Diagonal Traversal Top to Left");
         System.out.println(new MatrixDiagonalTraversal().traverseDiagonally(matrix, true, true));
@@ -106,5 +98,17 @@ public class MatrixDiagonalTraversal {
         System.out.println(new MatrixDiagonalTraversal().traverseDiagonally(matrix, false, true));
         System.out.println("Diagonal Traversal bottom to right");
         System.out.println(new MatrixDiagonalTraversal().traverseDiagonally(matrix, false, false));
+    }
+
+    public static void printMatrix(int[][] matrix) {
+        for(int[] row : matrix)
+        {
+            System.out.println();
+            for(int value : row)
+            {
+                System.out.print(value + " ");
+            }
+        }
+        System.out.println("");
     }
 }

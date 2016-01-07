@@ -1,7 +1,4 @@
-import javax.xml.soap.Node;
 import java.util.LinkedList;
-import java.util.List;
-import java.util.Stack;
 import java.util.TreeSet;
 
 /**
@@ -12,13 +9,6 @@ import java.util.TreeSet;
  * To change this template use File | Settings | File Templates.
  */
 public class BSTFromSortedArray {
-
-    public static class Node<T>
-    {
-        private T value;
-        private Node<T> left, right;
-    }
-
 
     public static Node<Integer> formBST(int[] sortedArray)
     {
